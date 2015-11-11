@@ -1,4 +1,4 @@
-/**
+﻿/**
  *
  * @source: http://candybox2.net/candybox2_uncompressed.js
  *
@@ -28,11 +28,9 @@
 */
 /*
 * Modified by SuperJedi224
-* Last modified 2015.04.09
+* Last modified 2015.11.11
 * No modified typescript files are available, but the original typescript can still be found here: http://candybox2.net/source_code.html
 */
-//Change the title
-document.title="Opening the Candy Box: A candy box 2 mod by SuperJedi224";
 var Algo;
 (function (Algo) {
     // Return 0 is the number given is under 0, else return the number given
