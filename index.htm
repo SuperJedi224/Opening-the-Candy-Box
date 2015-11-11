@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Hey, you're looking at the source code, cheater! ;) -->
+<html manifest="cacheManifest.mf"><head>
+<script>
+if (window.top!=window.self) 
+  {
+  window.top.location=window.self.location;
+  }
+</script>
+    <title>Candy Box 2</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript" src="index_files/jquery.js"></script>
+    <script type="text/javascript" src="index_files/game.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="index_files/design.css">
+    <link rel="icon" type="image/png" href="index_files/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="index_files/favicon.ico">
+ <!-- Favicon by HacksawUnit (https://twitter.com/HacksawUnit) -->
+  <link href="index_files/invertColors.css" rel="stylesheet">
+</head>
+  <body>
+      <div style="position: relative; top: auto; left: auto; right: auto; height: auto;" id="aroundStatusBar"><pre style="position: relative; overflow-x: hidden;" id="statusBar"><span class="asciiNinjaButton statusBarCornerButton">+</span>--------------------------------------------------------------------------------------------------<span class="asciiNinjaButton statusBarCornerButton">+</span>
+| You have 189 candies      |<span class="asciiButton statusBarTabButton0">  THE  </span>|      |<span class="asciiButton statusBarTabButton1">     </span>|                                      |<span style="background-color:rgb(64, 64, 64)">      </span>|<span class="asciiButton statusBarTabButton3"> C </span>|
+| You have 4 lollipops      |<span class="asciiButton statusBarTabButton0"> CANDY </span>|      |<span class="asciiButton statusBarTabButton1"> MAP </span>|                                      |<span style="background-color:rgb(64, 64, 64)"> SAVE </span>|<span class="asciiButton statusBarTabButton3"> F </span>|
+|                           |<span class="asciiButton statusBarTabButton0">  BOX  </span>|      |<span class="asciiButton statusBarTabButton1">     </span>|                                      |<span style="background-color:rgb(64, 64, 64)">      </span>|<span class="asciiButton statusBarTabButton3"> G </span>|
+|                           |<span style="background-color:rgb(20, 212, 0)">                        Your health : 105/105                         </span>|
+<span class="asciiNinjaButton statusBarCornerButton">+</span>--------------------------------------------------------------------------------------------------<span class="asciiNinjaButton statusBarCornerButton">+</span></pre></div>
+      <pre style="position: relative; overflow-x: hidden; left: 0px;" id="mainContent">                                   ____              _                                              
+                                  / ___|  __ ___   _(_)_ __   __ _                                  
+                                  \___ \ / _` \ \ / / | '_ \ / _` |                                 
+                                   ___) | (_| |\ V /| | | | | (_| |                                 
+                                  |____/ \__,_| \_/ |_|_| |_|\__, |                                 
+                                                             |___/                                  
+                                                                                                    
+                                           <b>Browser save</b>                                             
+                                                                                                    
+Choose local save if you want to keep playing on your current device and browser.                   
+----------------------------------------------------------------------------------------------------
+Choose a save slot :                               Choose what to do :                              
+                                                  |                                                 
+                                                  |                                                 
+     <span class="aroundSelect"><select id="saveLocalSaveSlotsList" class="asciiSelect" style="width:40ex"><option selected="selected" id="slot1" class="asciiSelectOption">Slot 1 (25/10/2013 @ 16:03:53, candies : 68)</option><option id="slot2" class="asciiSelectOption">Slot 2 (empty)</option><option id="slot3" class="asciiSelectOption">Slot 3 (empty)</option><option id="slot4" class="asciiSelectOption">Slot 4 (empty)</option><option id="slot5" class="asciiSelectOption">Slot 5 (empty)</option></select></span>                                             |<span class="aroundRealButton"><span class="asciiRealButton saveLocalSaveSaveButton">Save on slot 1</span></span>                                                 
+                                                  |                                                 
+                                                  |                                                 
+                                                  |<span class="aroundRealButton"><span class="asciiRealButton saveLocalSaveAutosaveButton">Save every 10 minutes on slot 1</span></span>                                                 
+                                                  |                                                 
+----------------------------------------------------------------------------------------------------
+                                                                                                    
+                                             <b>Text save</b>                                              
+                                                                                                    
+Choose text save if :                                                                               
+ - You want to continue playing on another device or browser                                        
+ - You want to share your save with someone else                                                    
+ - For some reason you want to empty your browser cache                                             
+   (which will erase your local saves)                                                              
+                                                                                                    
+                                   <span class="aroundRealButton"><span class="asciiRealButton saveFileSaveButton">Get the current game as text</span></span>                                                                 
+                                                                                                    
+                                                                                                    
+  <textarea class="textarea saveFileSaveTextarea" rows="6" cols="96"></textarea>                                                                                                  
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                 _                    _ _                                           
+                                | |    ___   __ _  __| (_)_ __   __ _                               
+                                | |   / _ \ / _` |/ _` | | '_ \ / _` |                              
+                                | |__| (_) | (_| | (_| | | | | | (_| |                              
+                                |_____\___/ \__,_|\__,_|_|_| |_|\__, |                              
+                                                                |___/                               
+                                                                                                    
+                                           <b>Browser load</b>                                             
+                                                                                                    
+Thanks to HTML5 magic, you can load a local save by clicking one of the following:
+<button onclick="location.search='?slot=1'">Slot 1</button>                                                         
+                          
+                                                                                                    
+                                             <b>Text load</b>                                              
+                                                                                                    
+Paste your save below, then click the "Load" button                                                 
+                                                                                                    
+                                                                                                    
+  <textarea class="textarea saveFileLoadTextarea" rows="6" cols="96"></textarea>                                                                                                  
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                <span class="aroundRealButton"><span class="asciiRealButton saveFileLoadButton">Load</span></span>                                                    
+                                                                                                    </pre>
+  
+
+
+</body></html>
+<!--
+___    .-"""-.    ___
+\  \  /\ \ \ \\  /  /
+ }  \/\ \ \ \ \\/  {    A candy!!
+ }  /\ \ \ \ \ /\  {
+/__/  \ \ \ \ /  \__\
+       '-...-'
+-->

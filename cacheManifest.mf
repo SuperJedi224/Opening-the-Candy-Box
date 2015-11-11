@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# Version 0.4118
+
+
+CACHE:
+
+index.html
+
+favicon.png
+
+design.css
+
+invertColors.css
+
+game.js
+
+jquery.js
